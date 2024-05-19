@@ -14,7 +14,7 @@ export default function Home () {
         <>
             <h1>{potd.title}</h1>
             <div>
-                {potd.hdurl ? <img src={potd.hdurl} alt="NASA Picture of the Day"/> :  <iframe src={potd.url} width="1012" height="569" ></iframe>}
+                {potd.hdurl ? <img src={potd.hdurl} alt="NASA Picture of the Day"/> :  <iframe src={potd.url} alt="NASA Video of the Day" ></iframe>}
             </div>
         </>
     )
