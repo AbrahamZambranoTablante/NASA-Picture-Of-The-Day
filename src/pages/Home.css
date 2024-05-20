@@ -1,0 +1,18 @@
+.potd-container {
+    text-align: center;
+}
+
+.potd-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.potd-image {
+    width: 1012px;
+    height: 569px;
+
+}
+
+.potd-description__container{
+    padding: 0px 300px;
+}
