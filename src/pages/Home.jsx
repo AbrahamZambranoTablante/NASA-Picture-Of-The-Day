@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react"
 import { getPictureOfTheDay } from "../data/fetch";
 import './Home.css'
@@ -18,7 +19,7 @@ export default function Home () {
                     <h1 className="potd-title">{potd.title}</h1>
                 </div>
                 <div className="potd-image__container">
-                    {potd.hdurl ? <img className="potd-image" src={potd.hdurl} alt="NASA Picture of the Day"/> :  <iframe  className="potd-image" src={potd.url} alt="NASA Video of the Day" ></iframe>}
+                    {potd.hdurl ? <Link to={`${potd.hdurl}`}><img className="potd-image" src={potd.hdurl} alt="NASA Picture of the Day"/></Link> :  <iframe  className="potd-image" src={potd.url} alt="NASA Video of the Day" ></iframe>}
                 </div>
                 <div className="potd-description__container">
                     <p className="potd-description">{potd.explanation}</p>
