@@ -16,10 +16,8 @@ export default function Archive () {
     }
 
     function getTodayDate() {
-        const fullDate = new Date();
-        const date = fullDate.toLocaleDateString('en-US').split("/");
-        date.unshift(date.pop());
-        return date.join("-");
+        const date = new Date();
+        return formatDate(date.toLocaleDateString('en-US'));
     }
 
     function getLastWeekDate () {
