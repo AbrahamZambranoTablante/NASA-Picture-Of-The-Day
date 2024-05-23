@@ -12,8 +12,6 @@ export default function ArchivePotd () {
         .then(res => setPotd(res))
     },[])
 
-    console.log(potd);
-
 
 
     return (
