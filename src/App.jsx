@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Archive from './pages/Archive'
+import ArchivePotd from './pages/ArchivePodt'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/archive" element={<Archive />} />
+          <Route path="/archive/pictureoftheday/:date" element={<ArchivePotd />} />
         </Routes>
         <Footer />
       </Router>
