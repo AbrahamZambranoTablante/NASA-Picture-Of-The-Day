@@ -16,7 +16,7 @@ export default function ArchivePotd () {
 
     return (
         <>
-           <Link to={potd.hdurl}> <img src={potd.hdurl}/> </Link>
+           { potd.hdurl ? <Link to={`${potd.hdurl}`}><img className="potd-image" src={potd.hdurl} alt="NASA Picture of the Day"/></Link> : <iframe  className="potd-image" src={potd.url} alt="NASA Video of the Day" ></iframe>}
         </>
     )
 }

@@ -35,7 +35,8 @@ export default function Archive () {
 
     function handleSubmit (e) {
         e.preventDefault();
-        navigate(`/archive/pictureoftheday/${formatDate(calendarDate.date)}`)
+        navigate(`/archive/pictureoftheday/${formatDate(calendarDate.date)}`);
+        setCalendarDate({date: ""})
     }
 
     useEffect(() => {
