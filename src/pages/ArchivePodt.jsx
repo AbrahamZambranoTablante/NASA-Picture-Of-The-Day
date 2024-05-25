@@ -4,7 +4,7 @@ import { getOnePOTD } from "../data/fetch";
 
 export default function ArchivePotd ({formatDate, calendarDate, setCalendarDate, handleDate}) {
 
-    const [potd, setPotd] = useState({})
+    const [pictureOfTheDay, setPictureOfTheDay] = useState({})
     const { date } = useParams()
     const navigate = useNavigate();
 
@@ -16,8 +16,8 @@ export default function ArchivePotd ({formatDate, calendarDate, setCalendarDate,
 
     useEffect(() => {
         getOnePOTD(date)
-        .then(res => setPotd(res))
-    },[])
+        .then(res => setPictureOfTheDay(res))
+    },[pictureOfTheDay])
 
 
 
@@ -28,8 +28,8 @@ export default function ArchivePotd ({formatDate, calendarDate, setCalendarDate,
                 <input type="date" id="date" onChange={handleDate} value={calendarDate.date}/>
                 <input type="submit" value="Search"/>
             </form>
-            
-           { potd.hdurl ? <Link to={`${potd.hdurl}`}><img className="potd-image" src={potd.hdurl} alt="NASA Picture of the Day"/></Link> : <iframe  className="potd-image" src={potd.url} alt="NASA Video of the Day" ></iframe>}
+
+           { pictureOfTheDay.hdurl ? <Link to={`${pictureOfTheDay.hdurl}`}><img className="potd-image" src={pictureOfTheDay.hdurl} alt="NASA Picture of the Day"/></Link> : <iframe  className="potd-image" src={pictureOfTheDay.url} alt="NASA Video of the Day" ></iframe>}
         </>
     )
 }

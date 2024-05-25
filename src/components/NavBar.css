@@ -1,0 +1,22 @@
+.nav-bar__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.home-link {
+    display: flex;
+}
+
+.logo-img {
+    padding-top: 10px;
+    width: 70px;
+}
+
+.about-archive__links {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    grid-column: 3 / 4 ;
+}
+
