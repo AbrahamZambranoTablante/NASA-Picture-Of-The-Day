@@ -12,5 +12,10 @@ export function getLastestPOTD (lastweek, today) {
 
 export function getOnePOTD (date) {
     return fetch(`https://api.nasa.gov/planetary/apod?api_key=${URL}&date=${date}`)
-    .then(res => res.json())
+    .then(res => {
+        if (!res.ok) {
+            throw new Error("Fetching API was not successful")
+        }
+        return res.json();
+    })
 }

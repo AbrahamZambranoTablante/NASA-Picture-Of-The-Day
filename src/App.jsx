@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Archive from './pages/Archive'
 import ArchivePotd from './pages/ArchivePodt'
+import Error from './pages/Error'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/archive" element={<Archive formatDate={formatDate} setCalendarDate={setCalendarDate} handleDate={handleDate} calendarDate={calendarDate} />} />
           <Route path="/archive/pictureoftheday/:date" element={<ArchivePotd formatDate={formatDate} setCalendarDate={setCalendarDate} handleDate={handleDate} calendarDate={calendarDate} />} />
+          <Route path="/archive/pictureoftheday/notfound" element={<Error />}/>
         </Routes>
         <Footer />
       </Router>
