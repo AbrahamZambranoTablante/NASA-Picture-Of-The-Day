@@ -10,6 +10,23 @@ import ArchivePotd from './pages/ArchivePodt'
 
 function App() {
 
+  
+  const [calendarDate, setCalendarDate] = useState({date: ""});
+
+  function formatDate ( unformattedDate ) {
+    let formattedDate = unformattedDate.split("/");
+    formattedDate.unshift(formattedDate.pop());
+    return formattedDate.join("-");
+  }
+
+ function handleDate (e) {
+    setCalendarDate({
+        ...calendarDate, [e.target.id]: e.target.value
+    })
+  }
+
+  
+
   return (
     <>
       <Router>
@@ -17,8 +34,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/archive" element={<Archive />} />
-          <Route path="/archive/pictureoftheday/:date" element={<ArchivePotd />} />
+          <Route path="/archive" element={<Archive formatDate={formatDate} setCalendarDate={setCalendarDate} handleDate={handleDate} calendarDate={calendarDate} />} />
+          <Route path="/archive/pictureoftheday/:date" element={<ArchivePotd formatDate={formatDate} setCalendarDate={setCalendarDate} handleDate={handleDate} calendarDate={calendarDate} />} />
         </Routes>
         <Footer />
       </Router>
