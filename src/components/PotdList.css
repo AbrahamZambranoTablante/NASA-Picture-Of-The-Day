@@ -1,15 +1,17 @@
-.potd__image {
-    width: 270px;
-    height: 150px;
-    padding: 20px;
-    margin-left: 20px;
-}
 
 .item-container {
     justify-content: center;
     align-items: center;
+    border: 1px solid red;
+    
+    .potd__image {
+        width: 270px;
+        height: 150px;
+        padding-left: 100px;
+    }
 }
 
 h4{
     text-align: center;
+
 }
