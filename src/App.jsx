@@ -14,6 +14,11 @@ function App() {
   
   const [calendarDate, setCalendarDate] = useState({date: ""});
 
+  function today () {
+    const date = new Date();
+    return date.toISOString().split('T')[0]
+}
+
   function formatDate ( unformattedDate ) {
     let formattedDate = unformattedDate.split("/");
     formattedDate.unshift(formattedDate.pop());
@@ -35,8 +40,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/archive" element={<Archive formatDate={formatDate} setCalendarDate={setCalendarDate} handleDate={handleDate} calendarDate={calendarDate} />} />
-          <Route path="/archive/pictureoftheday/:date" element={<ArchivePotd formatDate={formatDate} setCalendarDate={setCalendarDate} handleDate={handleDate} calendarDate={calendarDate} />} />
+          <Route path="/archive" element={<Archive today={today} formatDate={formatDate} setCalendarDate={setCalendarDate} handleDate={handleDate} calendarDate={calendarDate} />} />
+          <Route path="/archive/pictureoftheday/:date" element={<ArchivePotd today={today} formatDate={formatDate} setCalendarDate={setCalendarDate} handleDate={handleDate} calendarDate={calendarDate} />} />
           <Route path="/archive/pictureoftheday/notfound" element={<Error />}/>
         </Routes>
         <Footer />

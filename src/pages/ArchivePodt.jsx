@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { getOnePOTD } from "../data/fetch";
 import "./Home.css"
 
-export default function ArchivePotd ({formatDate, calendarDate, setCalendarDate, handleDate}) {
+export default function ArchivePotd ({formatDate, calendarDate, setCalendarDate, handleDate, today}) {
 
     const [pictureOfTheDay, setPictureOfTheDay] = useState({})
     const { date } = useParams()
@@ -26,7 +26,7 @@ export default function ArchivePotd ({formatDate, calendarDate, setCalendarDate,
         <>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="date">Go to a specific date </label>
-                <input type="date" id="date" onChange={handleDate} value={calendarDate.date}/>
+                <input type="date" id="date" onChange={handleDate} min="1995-06-20" max={today()} value={calendarDate.date}/>
                 <input type="submit" value="Search"/>
             </form>
             <div className="potd-img__container">

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./Archive.css";
 
 
-export default function Archive ({formatDate, handleDate, setCalendarDate, calendarDate}) {
+export default function Archive ({formatDate, handleDate, setCalendarDate, calendarDate, today}) {
 
     const [potdList, setPotdList] = useState([]);
     const navigate = useNavigate();
@@ -14,7 +14,8 @@ export default function Archive ({formatDate, handleDate, setCalendarDate, calen
         e.preventDefault();
         navigate(`/archive/pictureoftheday/${formatDate(calendarDate.date)}`);
         setCalendarDate({date: ""})
-      }
+    }
+
     
     function getTodayDate() {
         const date = new Date();
@@ -37,7 +38,7 @@ export default function Archive ({formatDate, handleDate, setCalendarDate, calen
         <>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="date">Go to a specific date </label>
-                <input type="date" id="date" onChange={handleDate} value={calendarDate.date}/>
+                <input type="date" id="date" min="1995-06-20" max={today()} onChange={handleDate} value={calendarDate.date}/>
                 <input type="submit" value="Search"/>
             </form>
             <div className="potd-list">
