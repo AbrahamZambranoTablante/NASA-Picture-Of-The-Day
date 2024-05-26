@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getLastestPOTD } from "../data/fetch";
 import PotdList from "../components/PotdList";
 import { useNavigate } from "react-router-dom";
+import "./Archive.css";
 
 
 export default function Archive ({formatDate, handleDate, setCalendarDate, calendarDate}) {
@@ -22,7 +23,7 @@ export default function Archive ({formatDate, handleDate, setCalendarDate, calen
 
     function getLastWeekDate () {
         const currentDate = new Date();
-        currentDate.setDate(currentDate.getDate() - 8);
+        currentDate.setDate(currentDate.getDate() - 15);
         let formattedDate = currentDate.toISOString().slice(0, 10);
         return formattedDate;
     }

@@ -10,7 +10,7 @@ export default function NavBar () {
                     <Link to="/"><h3 className="logo-title" >Astronomy <br/>Picture of the Day </h3></Link>
                 </div>
                 <div className="about-archive__links">
-                <Link to="/about"><h2 className="about">ABOUT</h2></Link><Link to="/archive"><h2 className="archive">ARCHIVE</h2></Link>
+                <Link to="/archive"><h2 className="archive">ARCHIVE</h2></Link><Link to="/about"><h2 className="about">ABOUT</h2></Link>
                 </div>
             </div>
         </>
