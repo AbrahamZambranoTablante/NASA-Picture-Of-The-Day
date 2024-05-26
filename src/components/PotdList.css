@@ -1,0 +1,11 @@
+.potd__image {
+    width: 270px;
+    height: 150px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.item-container {
+    justify-content: center;
+    align-items: center;
+}

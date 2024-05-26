@@ -1,4 +1,4 @@
-.potd-container {
+.potd-container, .potd-img__container {
     text-align: center;
 }
 
@@ -7,7 +7,7 @@
     font-style: italic;
 }
 
-.potd-image {
+.potd-image, .potd-img {
     width: auto;
     height: 769px;
 
