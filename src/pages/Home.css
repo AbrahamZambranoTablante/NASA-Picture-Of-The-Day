@@ -31,8 +31,11 @@
 }
 
 iframe {
-    width: 950px;
-    height: 470px;
+    width: 750px;
+    height: 380px;
+    padding: 25px;
+    border-radius: 10px;
+    border: none;
 }
 
 
