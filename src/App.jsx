@@ -9,6 +9,7 @@ import ArchivePotd from './pages/ArchivePotd'
 
 function App() {
 
+  const video = "https://cdn.pixabay.com/video/2022/02/08/107129-675298808_large.mp4";
 
   function formatDate ( unformattedDate ) {
     let formattedDate = unformattedDate.split("/");
@@ -20,16 +21,22 @@ function App() {
 
   return (
     <>
-      <Router>
-        <NavBar formatDate={formatDate} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/archive" element={<Archive formatDate={formatDate} />} />
-          <Route path="/archive/pictureoftheday/:date" element={<ArchivePotd />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <div className="main">
+        <div className="overlay"></div>
+        <video src={video} autoPlay loop muted/>
+        <div className="content">
+          <Router>
+            <NavBar formatDate={formatDate} />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/archive" element={<Archive formatDate={formatDate} />} />
+              <Route path="/archive/pictureoftheday/:date" element={<ArchivePotd />} />
+            </Routes>
+            <Footer />
+          </Router>
+        </div>
+      </div>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./SearchDate.css"
 
 export default function SearchDate ({formatDate}) {
 

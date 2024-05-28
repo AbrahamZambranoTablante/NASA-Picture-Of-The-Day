@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { getOnePOTD } from "../data/fetch";
 import "./Home.css"
 
@@ -24,7 +24,11 @@ export default function ArchivePotd () {
                 <div className="potd-date__container">
                     <h3 className="potd-date">{pictureOfTheDay.date}</h3>
                 </div>
-                { pictureOfTheDay.hdurl ? <Link to={`${pictureOfTheDay.hdurl}`}><img className="potd-img" src={pictureOfTheDay.hdurl} alt="NASA Picture of the Day"/></Link> : <iframe src={pictureOfTheDay.url} alt="NASA Video of the Day" ></iframe>}
+                    <div className="potd-second__container">
+                        <div className="potd-image__container">
+                            { pictureOfTheDay.hdurl ? <Link to={`${pictureOfTheDay.hdurl}`}><img className="potd-img" src={pictureOfTheDay.hdurl} alt="NASA Picture of the Day"/></Link> : <iframe src={pictureOfTheDay.url} alt="NASA Video of the Day" ></iframe>}
+                        </div>
+                    </div>
                 <div className="potd-copyright__container">
                     {pictureOfTheDay.copyright ? <h4 className="potd-copyright">Copyright: {pictureOfTheDay.copyright}</h4> : null}
                 </div>

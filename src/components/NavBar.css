@@ -1,6 +1,8 @@
 .nav-bar__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
 }
 
 
@@ -9,8 +11,11 @@
 }
 
 .logo-img {
-    padding-top: 10px;
     width: 70px;
+}
+
+.logo-title {
+    padding-top: 10px;
 }
 
 .about-archive__links {
@@ -19,5 +24,6 @@
     gap: 20px;
     grid-column: 3 / 4 ;
     margin-right: 40px;
+    padding-top: 20px;
 }
 

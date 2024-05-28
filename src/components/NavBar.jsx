@@ -12,7 +12,8 @@ export default function NavBar ({formatDate}) {
                 </div>
                 <SearchDate formatDate={formatDate} />
                 <div className="about-archive__links">
-                <Link to="/archive"><h2 className="archive">ARCHIVE</h2></Link><Link to="/about"><h2 className="about">ABOUT</h2></Link>
+                <Link to="/archive"><h3 className="archive">ARCHIVE</h3></Link>
+                <Link to="/about"><h3 className="about">ABOUT</h3></Link>
                 </div>
             </div>
         </>

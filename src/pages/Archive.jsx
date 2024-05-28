@@ -15,7 +15,7 @@ export default function Archive ({formatDate}) {
 
     function getLastWeekDate () {
         const currentDate = new Date();
-        currentDate.setDate(currentDate.getDate() - 11);
+        currentDate.setDate(currentDate.getDate() - 15);
         let formattedDate = currentDate.toISOString().slice(0, 10);
         return formattedDate;
     }
