@@ -1,0 +1,46 @@
+.github-link {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+.linkedin-link {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-pic {
+    height: 300px;
+    width: auto;
+    border-radius: 100%;
+}
+
+.bio-container {
+    padding: 0% 20% 2% 20%;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 2%;
+}
+
+.profile-container {
+    display: flex;
+    height: 84%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white-overlay {
+    width: fit-content;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
