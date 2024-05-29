@@ -48,8 +48,8 @@ Contributions are what make the open-source community such an amazing place to l
 
 Abraham Zambrano Tablante - [azambranotablante@pursuit.org](mailto:azambranotablante@pursuit.org)
 
-Project Link: [https://github.com/AbrahamZambranoTablante/NASA-Picture-Of-The-Day](https://github.com/AbrahamZambranoTablante/NASA-Picture-Of-The-Day)
+Project Link: [GitHub REPO](https://github.com/AbrahamZambranoTablante/NASA-Picture-Of-The-Day)
 
-## Online Web Site: [https://nasa-astronomypictureoftheday.netlify.app/](https://nasa-astronomypictureoftheday.netlify.app/)
+## Online Website: [NASA Astronomy Picture Of The Day](https://nasa-astronomypictureoftheday.netlify.app/)
 
-### FigJam Planning Board: [https://www.figma.com/board/HObAUscGo9lTJym5nZkYLH/NASA-Picture-Of-The-Day?node-id=0%3A1&t=S43YromLA868lUH0-1](https://www.figma.com/board/HObAUscGo9lTJym5nZkYLH/NASA-Picture-Of-The-Day?node-id=0%3A1&t=S43YromLA868lUH0-1)
+[FigJam Planning Board](https://www.figma.com/board/HObAUscGo9lTJym5nZkYLH/NASA-Picture-Of-The-Day?node-id=0%3A1&t=S43YromLA868lUH0-1)
