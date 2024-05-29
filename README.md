@@ -51,3 +51,5 @@ Abraham Zambrano Tablante - [azambranotablante@pursuit.org](mailto:azambranotabl
 Project Link: [https://github.com/AbrahamZambranoTablante/NASA-Picture-Of-The-Day](https://github.com/AbrahamZambranoTablante/NASA-Picture-Of-The-Day)
 
 ## Online Web Site: [https://nasa-astronomy-picture-of-the-day-eight.vercel.app/](https://nasa-astronomy-picture-of-the-day-eight.vercel.app/)
+
+### FigJam Planning Board: [https://www.figma.com/board/HObAUscGo9lTJym5nZkYLH/NASA-Picture-Of-The-Day?node-id=0%3A1&t=S43YromLA868lUH0-1](https://www.figma.com/board/HObAUscGo9lTJym5nZkYLH/NASA-Picture-Of-The-Day?node-id=0%3A1&t=S43YromLA868lUH0-1)

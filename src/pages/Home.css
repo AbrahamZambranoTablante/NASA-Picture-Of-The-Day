@@ -40,4 +40,16 @@ iframe {
     border: none;
 }
 
+@media (min-height: 790px) and (max-height: 879px ){
+    .potd-description__container{
+        padding: 10px 220px;
+    }
+}
+
+@media (min-height: 880px) {
+    .potd-description__container{
+        padding: 10px 420px;
+    }
+}
+
 

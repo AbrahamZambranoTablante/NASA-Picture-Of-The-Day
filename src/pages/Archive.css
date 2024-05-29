@@ -1,13 +1,7 @@
 .potd-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     height: 80%;
-}
-
-form {
-    text-align: center;
-    padding: 20px;
 }

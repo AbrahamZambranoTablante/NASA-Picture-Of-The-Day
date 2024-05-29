@@ -2,3 +2,8 @@ input {
     color: black;
 }
 
+form {
+    text-align: center;
+    padding: 20px;
+}
+
