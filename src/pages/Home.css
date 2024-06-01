@@ -38,5 +38,21 @@ iframe {
     border: none;
 }
 
+@media (width <= 450px ) {
 
+    .potd-description {
+        font-size: 10px;
+    }
+
+    .potd-image, .potd-img {
+        width: auto;
+        height: 200px;
+        padding: 25px;
+    }
+
+    .potd-container, .potd-img__container {
+        height: 70%;
+    }
+
+}
 

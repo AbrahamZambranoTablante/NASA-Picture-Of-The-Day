@@ -5,3 +5,9 @@
     padding: 20px;
     height: 80%;
 }
+
+@media (width <= 450px ) {
+    .potd-list {
+        height: 65%;
+    }
+}

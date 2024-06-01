@@ -6,3 +6,10 @@
     gap: 20px;
     padding-top: 20px;
 }
+
+@media (width <= 450px ) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
