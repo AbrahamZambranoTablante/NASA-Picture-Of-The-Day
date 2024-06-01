@@ -13,3 +13,10 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (width <= 376px ) {
+    .footer-container {
+        gap: 8px;
+        font-size: 12px;
+    }
+}

@@ -34,3 +34,10 @@
     }
 }
 
+@media (width <= 376px ) {
+
+    .nav-bar__container {
+        font-size: 12px;
+    }
+}
+

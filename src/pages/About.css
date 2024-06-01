@@ -50,3 +50,13 @@ h2 {
         height: 70%;
     }
 }
+
+@media (width <= 376px ) {
+    .profile-pic {
+        height: 150px;
+    }
+
+    .bio-container {
+        font-size: 12px;
+    }
+}

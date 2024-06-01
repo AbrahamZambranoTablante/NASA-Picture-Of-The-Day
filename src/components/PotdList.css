@@ -17,11 +17,19 @@
     padding: 20px;
 }
 
-@media (width <= 450px ) {
+@media (width <= 450px ) and (width > 376px){
 
     .potd__image {
         width: 80px;
         height: 50px;
+        padding: 10px;
+    }
+}
+
+@media (width <= 376px ) {
+    .potd__image {
+        width: 60px;
+        height: 30px;
         padding: 10px;
     }
 }
