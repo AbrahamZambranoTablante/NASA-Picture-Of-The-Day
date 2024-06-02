@@ -31,13 +31,8 @@
     .about-archive__links {
         display: grid;
         grid-template-columns: 1fr;
-    }
-}
-
-@media (width <= 376px ) {
-
-    .nav-bar__container {
         font-size: 12px;
     }
 }
+
 
