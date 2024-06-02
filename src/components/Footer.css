@@ -7,7 +7,7 @@
     padding-top: 20px;
 }
 
-@media (width <= 450px ) {
+@media (width <= 550px ) {
     .footer-container {
         display: grid;
         grid-template-columns: 1fr;

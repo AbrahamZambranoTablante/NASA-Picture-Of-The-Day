@@ -27,7 +27,7 @@
     padding-top: 20px;
 }
 
-@media (width <= 450px ) {
+@media (width <= 550px ) {
     .about-archive__links {
         display: grid;
         grid-template-columns: 1fr;

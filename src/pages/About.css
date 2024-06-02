@@ -45,7 +45,7 @@ h2 {
     gap: 20px;
 }
 
-@media (width <= 450px ) {
+@media (width <= 550px ) {
     .profile-container {
         height: 70%;
     }

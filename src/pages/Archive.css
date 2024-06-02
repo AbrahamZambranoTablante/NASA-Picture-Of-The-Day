@@ -6,7 +6,7 @@
     height: 80%;
 }
 
-@media (width <= 450px ) {
+@media (width <= 550px ) {
     .potd-list {
         height: 65%;
     }
